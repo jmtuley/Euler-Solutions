@@ -25,3 +25,6 @@ protected
 		return false
 	end
 end
+
+
+puts ProblemOne.sum_multiples([3,5], 1000)
