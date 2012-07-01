@@ -14,8 +14,7 @@ class Fibonacci
     end
   end
 end
-# The 36th Fibonacci number (zero-indexing with 1, 2, ...) is 39088169, so we want to look at the first 37 
 
-answer = Fibonacci.sequence.take(37).select {|n| n.even? }.inject(&:+)
+answer = Fibonacci.sequence.take_while{|f| f < 4_000_000}.select {|n| n.even? }.inject(&:+)
 
 puts answer
